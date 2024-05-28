@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* modal app */
+
+.modalAppSection {
+    display: none;
+    position: fixed;
+    align-self: center;
+    z-index: 1;
+    width: 95%;
+    height: 95%;
+    background-color:#2D2D2D;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.modalContent {
+    display: none;
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    padding: 20px 0px 100px 0px;
+    flex-direction: column;
+
+}
+
+#modalApp_city {
+    background-color: gray;
+    overflow-y: hidden;
+    width: 50%;
+    height: 30%;
+}
+/* modal app */
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D2D2D;
+}
+
+header > article {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 15px;
+}
+
+#logo {
+    font-size: 24px;
+}
+
+/* главная страница */
+#mainPage {
+    background-image: url(assets/mainPage.png);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+#mainPage > article {
+    display: grid;
+    gap: 20px;
+
+}
+
+#mainPrimary {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+/* кнопки */
+
+button {
+    border: none;
+}
+
+.btn_background {
+background-color: #0C9600;
+border-radius: 10px;
+font-size: 32px;
+width: 360px;
+height: 60px;
+border: 3px solid #0C9600;
+transition: .2s;
+}
+
+.btn_background:hover {
+    background-color: #0eac00;
+}
+
+.btn_noBackground {
+    background: none;
+    border: 3px solid #0C9600;
+    color: #0C9600;
+    border-radius: 10px;
+    font-size: 32px;
+    width: 360px;
+    height: 60px;
+}
+
+.btn_noBackground:hover {
+    border: 3px solid #0eac00;
+    color: #0eac00;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#prem {
+    background-color: #2D2D2D;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+#prem p {
+    font-size: 28px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #0C9600;
+    width: 400px;
+    font-weight: bold;
+}
+
+#prem button {
+    font-size: 24px;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#predprAll {
+    background-color: #464646;
+    padding-top: 25px;
+}
+
+#predprAll_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 50px;
+}
+
+.card {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 30px;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.card img {
+    width: 250px;
+}
+
+.card button {
+    width: 250px;
+    height: 40px;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+#delivery {
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+
+#delivery p {
+    font-size: 28px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #0C9600;
+    width: 450px;
+    font-weight: bold;
+    
+}
+
+#delivery button {
+    font-size: 24px;
+    width: 300px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#city_confirm {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#city_all {
+    background-color: #202020;
+    text-align: center;
+    font-size: 24px;
+    padding: 0px 70px;
+}
+
+#modalApp_cityCon {
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+
+.modalApp_menu {
+    display: flex;
+    gap: 10px;
+}
+
+.card_menu {
+    text-align: center;
+    background-color: #464646;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+    font-size: 24px;
+}
+
+.card_menu button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+}
